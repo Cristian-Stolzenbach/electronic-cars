@@ -1,3 +1,10 @@
+.template-areas {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+        
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,7 +12,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #ff0000;
 }
 header, footer {
     width: 100%;
