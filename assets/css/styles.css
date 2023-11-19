@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "menu"
         "filtros"
         "principal"
@@ -9,14 +9,25 @@
     grid-template-columns: 1fr;
 }
 
-.menu { grid-area: menu; }
-.filtros { grid-area: filtros; }
-.principal { grid-area: principal; }
-.pie { grid-area: pie; }
+.menu {
+    grid-area: menu;
+}
+
+.filtros {
+    grid-area: filtros;
+}
+
+.principal {
+    grid-area: principal;
+}
+
+.pie {
+    grid-area: pie;
+}
 
 @media (min-width: 576px) {
     .container {
-        grid-template-areas: 
+        grid-template-areas:
             "menu menu"
             "filtros principal"
             "pie pie";
@@ -26,6 +37,10 @@
 
 /* version movil */
 
+.panel {
+    float: left;
+}
+
 .icono {
     float: right;
 }
@@ -34,5 +49,74 @@
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 40px;
+    text-align: left;
+    background-color: chartreuse;
+}
+
+.filtros {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
     text-align: center;
+    background-color: rgba(128, 255, 0, 0.432);
+}
+
+.principal {
+    border-color: grey;
+    /* Color del borde */
+    border-width: 1px;
+    /* Ancho del borde */
+    border-style: solid;
+    /* Estilo del borde */
+    ;
+}
+
+.precio {
+
+    background-color: white;
+    /* Fondo blanco */
+    padding: 10px;
+    /* Espacio interior */
+    border: 10px solid rgba(128, 255, 0, 0.432);
+    /* Borde color */
+    text-align: left;
+
+}
+
+.flecha {
+    float: right;
+}
+
+.panelsolar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modelo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.ver {
+    background-color: chartreuse;
+    ;
+    /* Fondo blanco */
+    padding: 1px;
+    /* Espacio interior */
+    border: 0px solid rgb(255, 255, 255);
+    /* Borde color */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+
 }
