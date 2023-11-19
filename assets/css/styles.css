@@ -4,6 +4,7 @@
         "menu"
         "filtros"
         "principal"
+        "cuadrados"
         "pie";
     grid-template-rows: auto 1fr auto auto;
     grid-template-columns: 1fr;
@@ -30,6 +31,7 @@
         grid-template-areas:
             "menu menu"
             "filtros principal"
+            "cuadrados cuadrados"
             "pie pie";
         grid-template-columns: 1fr 3fr;
     }
@@ -120,3 +122,43 @@
     text-align: center;
 
 }
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.item2 {
+    border: 1px solid rgba(128, 255, 0, 0.432);
+    ;
+    padding: 3px;
+}
+
+.pie {
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+}
+
+.pie1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    
+   
+}
+
+
+.pie2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    background-color: chartreuse;
+}
+
+/*   desktop  */
