@@ -6,7 +6,7 @@
         "principal"
         "cuadrados"
         "pie";
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-rows: auto 1fr auto auto auto;
     grid-template-columns: 1fr;
 }
 
@@ -45,6 +45,13 @@
 
 .icono {
     float: right;
+    display: block;
+}
+
+@media (min-width: 577px) {
+    .icono {
+        display: none; /* El icono se oculta cuando la pantalla tiene 577px de ancho o más */
+    }
 }
 
 .menu {
@@ -129,7 +136,16 @@
     gap: 0px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    
 }
+.cuadrados {
+    display: block; /* El  es visible por defecto */
+}
+    @media (min-width: 577px) {
+        .cuadrados {
+            display: none; /* El icono se oculta cuando la pantalla tiene 577px de ancho o más */
+        }
+    }
 
 .item2 {
     border: 1px solid rgba(128, 255, 0, 0.432);
@@ -162,3 +178,4 @@
 }
 
 /*   desktop  */
+
