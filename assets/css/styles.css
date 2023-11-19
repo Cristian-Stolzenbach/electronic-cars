@@ -2,6 +2,7 @@
     display: grid;
     grid-template-areas:
         "menu"
+        "side-nav"
         "filtros"
         "principal"
         "cuadrados"
@@ -14,8 +15,15 @@
     grid-area: menu;
 }
 
+.side-nav {
+    grid-area: side-nav;
+}
 .filtros {
     grid-area: filtros;
+}
+
+.cuadrados {
+    grid-area: cuadrados;
 }
 
 .principal {
@@ -60,6 +68,20 @@
     font-size: 40px;
     text-align: left;
     background-color: chartreuse;
+}
+
+.side-nav {
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    background-color: chartreuse;
+}
+@media (min-width: 576px) {
+    .side-nav {
+        display: block; /* El icono se oculta cuando la pantalla tiene 577px de ancho o más */
+    }
 }
 
 .filtros {
@@ -141,7 +163,7 @@
 .cuadrados {
     display: block; /* El  es visible por defecto */
 }
-    @media (min-width: 577px) {
+    @media (min-width: 576px) {
         .cuadrados {
             display: none; /* El icono se oculta cuando la pantalla tiene 577px de ancho o más */
         }
@@ -179,3 +201,6 @@
 
 /*   desktop  */
 
+
+
+  
